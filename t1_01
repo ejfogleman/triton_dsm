@@ -1,0 +1,36 @@
+2         % Number of delta-sigma stages
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Stage 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+1         % Integrator gain
+0         % Integrator gain standard deviation
+0.1875    % DAC element step size (volts)
+0.01      % DAC element mismatch standard deviation
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Stage 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+1         % Integrator gain
+0         % Integrator gain standard deviation
+0.3750    % DAC element step size (volts)
+0.01      % DAC element mismatch standard deviation
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+1         % use_second_order_mmdac (1 ==> second order, 0 ==> first order)
+4         % num_skr_int2_bits; size of counter in mmdac sb state machine's second integrator
+1         % Number of bits by which to requantize ADC output (with noise-shaping) 
+64        % Number of comparators in ADC
+3.0       % Peak value (in volts) of ADC input (range = [-value, value])
+0         % ADC unit resistor standard deviation
+0         % ADC comparator offset standard deviation (volts)
+
+2.6737528144012366e+00	  % Amplitude of input sinusoid (volts)
+976.5625e-6     % Frequency of input sinusoid (relative to a sample-rate of 1)
+1.414214e-3     % Constant (dc) offset of input signal
+0         % Amplitude of cm noise sinusoid (volts)
+2.593994e-3     % Frequency of cm noise sinusoid (rel. Fs=1)
+0         % Constant (dc) offset of cm noise
+32768     % Number of periodogram bins 
+20        % Number of periodogram averages
+64        % Oversampling ratio (for SINAD calculation)
+34349     % Random number generation seed
