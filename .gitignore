@@ -4,6 +4,10 @@
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
 # User-specific files
+c_cpp_properties.json
+launch.json
+settings.json
+
 *.rsuser
 *.suo
 *.user
