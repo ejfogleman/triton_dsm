@@ -86,7 +86,9 @@ def plot_dsm_psd_linear_freq( datfile, delta, Fs, d, OSR, pltres ):
     ax.set_title( datfile )
     ax.legend()
     plt.grid(visible=True)
-    plt.show()
+    # plt.show()
+    print("Saving to plot_dsm_psd_linear_freq.png")
+    plt.savefig("plot_dsm_psd_linear_freq.png")
     return
             
  
@@ -166,6 +168,8 @@ def plot_dsm_psd_log_freq( datfile, delta, Fs, d, pltres ):
     ax.legend()
     plt.grid(visible=True)
     plt.show()
+    print("Saving to plot_dsm_psd_log_freq.png")
+    plt.savefig("plot_dsm_psd_log_freq.png")
     return               
                     
                         
